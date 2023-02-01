@@ -1,0 +1,18 @@
+#get all accounts of customer
+GET http://localhost:8090/api/v1/customers/1/accounts
+Accept: application/json
+###
+#get one account
+GET http://localhost:8090/api/v1/customers/1/accounts/2
+Accept: application/json
+###
+# create new account
+POST http://localhost:8090/api/v1/customers/100/accounts
+Content-Type: application/json
+
+{}
+###
+
+DELETE http://localhost:8090/api/v1/customers/5/accounts/5
+Accept: application/json
+###

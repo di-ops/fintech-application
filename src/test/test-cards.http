@@ -1,0 +1,22 @@
+
+GET http://localhost:8090/api/v1/customers/1/accounts/1/cards
+Accept: application/json
+###
+
+GET http://localhost:8090/api/v1/customers/2/accounts/2/cards/1
+Accept: application/json
+###
+
+POST http://localhost:8090/api/v1/customers/1/accounts/2/cards
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:8090/api/v1/customers/1/accounts/1/cards/1
+Content-Type: application/json
+
+{
+  "deposit": 10000
+}
+###
+

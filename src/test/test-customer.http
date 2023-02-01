@@ -1,0 +1,42 @@
+GET http://localhost:8090/api/v1/customers
+Accept: application/json
+###
+
+GET http://localhost:8090/api/v1/customers/50
+Accept: application/json
+###
+
+POST http://localhost:8090/api/v1/customers
+Content-Type: application/json
+
+{
+  "firstName": "Nikolay",
+  "lastName": "Nikolaev",
+  "phone": "8-800-555-35-35",
+  "passport": "2222 111111"
+}
+###
+
+DELETE http://localhost:8090/api/v1/customers/4
+Accept: application/json
+###
+
+PATCH http://localhost:8090/api/v1/customers/4
+Content-Type: application/json
+
+{
+  "firstName": "Nikola",
+  "lastName": "Kolaev",
+  "passport": "2222 111111",
+  "phone": "8-800-555-35-35"
+}
+###
+
+PATCH http://localhost:8090/api/v1/customers/4
+Content-Type: application/json
+
+{
+  "passport": "2222 340911",
+  "phone": "8-522222"
+}
+###
